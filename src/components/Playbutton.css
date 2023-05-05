@@ -1,0 +1,21 @@
+button{
+    background: #000;
+    border: 2px white solid;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 41px;
+    font-size:18px;
+    padding: 2px;
+    border: green solid 3px;
+
+    
+
+}
+button:hover{
+    background: white;
+    color: #000;
+    text-decoration: underline;
+    border: 5px solid darkred;
+}

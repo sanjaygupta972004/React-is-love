@@ -1,0 +1,25 @@
+.container{
+    width: 200px;
+    float: left;
+    margin: 10px;
+    
+    }
+    .pic{
+        width: 60%;
+        padding: 8px;
+        height: 190px;
+    
+    }
+    .title{
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 5px;
+        color: rgb(13, 14, 13);
+    }
+    .channel .view{
+        padding: 0px 8px;
+    
+    }
+    
+    
+    
