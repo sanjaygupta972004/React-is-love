@@ -5,13 +5,12 @@ function Counter(){
 function handleclick(){
 setNumber(number+1)
 //setNumber(Number=>number+2) //updating function which are use in update value
-//setNumber(Number=>number+2)
 console.log(number);
 }
     return(
         <>
         <h1 style={{color:"green"}} >{number} </h1>
-        <button onClick={handleclick}>add</button>
+        <button onClick={handleclick}>Add Num </button>
         </>
     )
 }

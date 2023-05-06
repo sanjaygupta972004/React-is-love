@@ -4,11 +4,16 @@ import Video from "./components/Video";
 import videodb from "./Data/datadb";
 import Playbutton from "./components/Playbutton";
 import Counter from "./components/Counter";
+import Addvideo from "./components/Addvideolistbyform";
 import { useState } from "react";
 function App(){
+
   const [video,setVideo]= useState(videodb)
   return(
   <>
+  
+<Addvideo></Addvideo>
+
 <div className="App" onClick={()=>console.log('App')}>
 <div>
 <button onClick={()=>{
@@ -16,13 +21,13 @@ setVideo([...video,
 {title:'Demo js',
 channel:"coder dost",
 view:'1000k',
-time:'2 year ago',
-varified:true,}
+time:'4 year ago',
+varified:true }
 ]
-)}
- }>Set Video</button>
-</div>  
+)} 
+ }>SetVideo</button>
 
+</div>  
   {video.map(video=><Video
       title={video.title}
     channel={video.channel}
@@ -35,13 +40,12 @@ varified:true,}
     </div>
     </Video>
     )
-}
- </div> 
-     <div style={{clear:"both"}}>
-   {/* <Playbutton message="play here" onClick={()=>console.log('play')} onPause ={()=>console.log("pause")}> play </Playbutton> /*}
-    {/*<Playbutton message="stop">pause</Playbutton> */}
-    <Counter ></Counter>
-    </div>
+  }
+ </div>
+
+<div style={{clear:"both"}}><Counter ></Counter></div>
+
+  
   </>
   )
   }

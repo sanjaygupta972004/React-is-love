@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Playbutton.css";
-function Playbutton({message,children, onPause,onClick}){
-    const [playing, setplaying]=useState(false) ;// don't used this approch lean nest tutorial
+function Playbutton({children, onPause,onClick}){
+    const [playing, setplaying]=useState(false) ;// in this line using  usestate,hook 
     function handleclick(e){
         e.stopPropagation()
         if(playing){
@@ -14,12 +14,9 @@ function Playbutton({message,children, onPause,onClick}){
 
     }
     return(
-
-        <div className="button">
+        <div>
         <button onClick={handleclick}>{children}:{playing ?'▶️':'⏸️'} </button>
-        </div>
-    
-        
+        </div> 
     )
 }
 export default Playbutton

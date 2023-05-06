@@ -5,17 +5,6 @@ let bg="dark";
 let id;
 function Video({title,channel,view,time ,varified ,children}){
    return(
-     /* 
-    <div>Hello india </div>
-       
-      // using fragment
-   return(
-    <>
-    <img src="https://www.shutterstock.com/shutterstock/photos/1921003172/display_1500/stock-photo-dubai-uae-february-dubi-skyline-palm-trees-with-burj-khalifa-and-skyscrapers-on-the-1921003172.jpg" alt="dumy photo" width={400} height={300}></img>
-    <p style={{backgroundColor:bgcolor}} className= {bg}>hello india  {title} </p>
-    </>
-   
-    */
   // designing complete one component
   <>
  <div className='container'>
