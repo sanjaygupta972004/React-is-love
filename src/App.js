@@ -9,10 +9,16 @@ import { useState } from "react";
 function App(){
 
   const [video,setVideo]= useState(videodb)
+
+  function addvideo(videos){
+    setVideo([...video,
+         videos
+      ])
+  }
   return(
   <>
   
-<Addvideo></Addvideo>
+<Addvideo addvideo={addvideo}></Addvideo>
 
 <div className="App" onClick={()=>console.log('App')}>
 <div>
