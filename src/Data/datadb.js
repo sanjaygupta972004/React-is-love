@@ -4,6 +4,7 @@ let videodb=[{
     view:'100k',
     time:'2 year ago',
     varified:false,
+    id:1
 
   },{
     title:'learn mangodb',
@@ -11,6 +12,7 @@ let videodb=[{
     view:'10k',
     time:'2 year ago',
     varified:true,
+    id:2
 
 
   },{
@@ -19,6 +21,7 @@ let videodb=[{
     view:'1000k',
     time:'2 year ago',
     varified:true,
+    id:3
 
 
   },{
@@ -27,6 +30,7 @@ let videodb=[{
     view:'10000k',
     time:'2 year ago',
     varified:true,
+    id:4
     
   }]
 export default videodb

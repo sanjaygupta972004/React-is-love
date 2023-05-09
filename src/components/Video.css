@@ -2,6 +2,7 @@
     width: 200px;
     float: left;
     margin: 10px;
+    position: relative;
     
     }
     .pic{
@@ -19,6 +20,29 @@
     .channel .view{
         padding: 0px 8px;
     
+    }
+    .close{
+        font-size: 30px;
+        position: absolute;
+        background-color: chartreuse;
+        width: 30px;
+        margin: 10px 0px 20px 180px;
+        padding: 2px 0px 0px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    
+    }
+
+    .edit{
+        font-size: 30px;
+        position: absolute;
+        background-color: chartreuse;
+        width: 60px;
+        margin: 9px;
+        padding: 2px 0px 0px 5px;
+        cursor:pointer;
+        border-radius: 5px;
+
     }
     
     

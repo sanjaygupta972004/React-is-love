@@ -1,11 +1,17 @@
 import './Video.css';
-function Video({title,channel,view,time ,varified ,children}){
+function Video({title,channel,view,time ,varified ,children ,id,deletevideo,editvideo}){
+
    return(
   // designing complete one component
   <>
  <div className='container'>
+  <div className='close' onClick={()=>deletevideo(id)}>X
+  </div>
+  <div className='edit' onClick={()=>editvideo(id)}>Edit
+  </div>
+
   <div className='pic'>
-  <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dumy photo" width={210} height={190}></img>
+  <img src={`https://picsum.photos/id/${id}/367/267`} alt="dumy photo" width={210} height={190}></img>
   </div>
 <div className='title'> {title}</div>
 <div className='channel'> {channel}{varified? "😄" :null}</div> 
